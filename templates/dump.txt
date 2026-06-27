@@ -1,0 +1,29 @@
+576px   /* large phones */
+768px   /* tablets */
+992px   /* laptops */
+        --primary: #0a8f3d;
+        --dark: #0b1f3a;
+        --light: #f8fafc;
+
+
+
+            <div class="d-flex align-items-center">
+          <!-- <a href="tel:+442012345678" class="text-decoration-none text-dark me-3 d-none d-lg-block">
+            <i class="fa-solid fa-phone"></i>
+            020 1234 5678
+          </a> -->
+
+          {% if user.is_authenticated %}
+
+          <a href="#" class="btn btn-outline-primary me-2"> Dashboard </a>
+
+          {% else %}
+
+          <a href="{% url 'sign-in' %}" class="btn btn-outline-dark me-2">
+            Login
+          </a>
+
+          {% endif %}
+
+          <a href="#services" class="btn btn-main"> Request Service </a>
+        </div>
