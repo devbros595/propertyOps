@@ -1,145 +1,116 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <section class="hero bg-light">
-    <div class="container">
-        <div class="row align-items-start">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 hero-content">
+        <span class="hero-badge"> Fast. Reliable. Professional. </span>
 
-            <div class="col-lg-6 justify-content-center">
+        <h1 class="hero-title mt-4">
+          Property services made simple,<br />
+          <span class="accent"> fast & reliable </span>
+        </h1>
 
-                <span class="hero-badge">
-                    Fast. Reliable. Professional.
-                </span>
+        <p class="hero-description d-md-none mt-4">Trusted professional. Fast dispatch. Secure payments.</p>
+          <p class="hero-description mt-4 d-none d-md-block">PropertyOps connects you with vetted professionals, manages payments
+          securely and ensures every job gets completed to the highest standard.</p>
+        </p>
 
-                <h1 class="hero-title mt-4">
-                    Property services
-                    made simple.
-                    <span class="accent">
-                        We handle the rest.
-                    </span>
-                </h1>
+        <div class="hero-btn">
+          <a href="#" class="btn btn-main me-3 w-100"> Request a Service </a>
 
-                <p class="hero-description mt-4">
-                    PropertyOps connects you with vetted professionals,
-                    manages payments securely and ensures every job
-                    gets completed to the highest standard.
-                </p>
-
-                <div class="mt-4 hero-btn">
-                    <a href="#" class="btn btn-main me-3 w-100">
-                        Request a Service
-                    </a>
-
-                    <a href="#" class="btn btn-outline-custom w-100">
-                        How It Works
-                    </a>
-                </div>
-
-
-
-            </div>
-
-            <div class="col-lg-6 d-none d-lg-block">
-
-                <div class="hero-image">
-                    <img src="{% static 'img/plumber.png' %}" alt="">
-                </div>
-
-            </div>
-
+          <a href="#" class="btn btn-outline-custom w-100"><i class="fa-regular fa-circle-play fa-lg me-2"></i> How It Works </a>
         </div>
-        <div class="row trust-icons">
+      </div>
 
-            <div class="col-md-3 trust-item">
-                <i class="fas fa-shield-alt"></i>
-                <div class="d-flex flex-column align-items-start">
-                    <span class="trust-title">Vetted Professionals</span>
-                    <p>Background-checked experts</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 trust-item">
-                <i class="fa-solid fa-stopwatch"></i>
-                <div class="d-flex flex-column align-items-start">
-                    <span class="trust-title">Fast Dispatch</span>
-                    <p>Closest pro, on the way</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 trust-item">
-                <i class="fas fa-lock"></i>
-                <div class="d-flex flex-column align-items-start">
-                    <span class="trust-title">Secure Payments</span>
-                    <p>Powered by Stripe</p>
-                </div>
-
-            </div>
-
-            <div class="col-md-3 trust-item">
-                <i class="fas fa-circle-check"></i>
-                <div class="d-flex flex-column align-items-start">
-                    <span class="trust-title">Satisfaction Guaranteed</span>
-                    <p>Pay only when you're happy</p>
-                </div>
-
-            </div>
-
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="hero-image">
+          <img src="{% static 'img/plumber.png' %}" alt="" />
         </div>
+      </div>
     </div>
+    <div class="row trust-icons">
+      <div class="col-md-3 trust-item">
+        <i class="fas fa-shield-alt"></i>
+        <div class="d-flex flex-column align-items-start">
+          <span class="trust-title">Vetted Professionals</span>
+          <p>Background-checked experts</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 trust-item">
+        <i class="fa-solid fa-stopwatch"></i>
+        <div class="d-flex flex-column align-items-start">
+          <span class="trust-title">Fast Dispatch</span>
+          <p>Closest pro, on the way</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 trust-item">
+        
+        <i class="fas fa-lock"></i>
+        <div class="d-flex flex-column align-items-start">
+          <span class="trust-title">Secure Payments</span>
+          <p>Powered by Stripe</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 trust-item">
+        <i class="fas fa-circle-check"></i>
+        <div class="d-flex flex-column align-items-start">
+          <span class="trust-title">Satisfaction Guaranteed</span>
+          <p>Pay only when you're happy</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="py-5">
-    <div class="container">
+  <div class="container">
+    <h2 class="section-title">How PropertyOps Works</h2>
 
-        <h2 class="section-title">
-            How PropertyOps Works
-        </h2>
-
-        <div class="row g-4">
-
-            <div class="col-md-3">
-                <div class="how-card">
-                    <div class="step-circle">
-                        <i class="fas fa-list"></i>
-                    </div>
-                    <h5>Choose Service</h5>
-                    <p>Select the property service you need.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="how-card">
-                    <div class="step-circle">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <h5>Make Payment</h5>
-                    <p>Secure payment through Stripe.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="how-card">
-                    <div class="step-circle">
-                        <i class="fas fa-user-check"></i>
-                    </div>
-                    <h5>We Assign a Pro</h5>
-                    <p>Closest available contractor is dispatched.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="how-card">
-                    <div class="step-circle">
-                        <i class="fas fa-check"></i>
-                    </div>
-                    <h5>Job Completed</h5>
-                    <p>Approve the completed work.</p>
-                </div>
-            </div>
-
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="how-card">
+          <div class="step-circle">
+            <i class="fas fa-list"></i>
+          </div>
+          <h5>Choose Service</h5>
+          <p>Select the property service you need.</p>
         </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="how-card">
+          <div class="step-circle">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <h5>Make Payment</h5>
+          <p>Secure payment through Stripe.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="how-card">
+          <div class="step-circle">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h5>We Assign a Pro</h5>
+          <p>Closest available contractor is dispatched.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="how-card">
+          <div class="step-circle">
+            <i class="fas fa-check"></i>
+          </div>
+          <h5>Job Completed</h5>
+          <p>Approve the completed work.</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 {% endblock %}
